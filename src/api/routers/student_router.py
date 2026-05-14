@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query
 
 from src.api.dto.student import StudentCreate, StudentResponse, StudentUpdate
-from src.features.students.student_service import StudentService
+from src.services.student_service import StudentService
 
 router = APIRouter(tags=["Students"], prefix="/students")
 student_service = StudentService()
